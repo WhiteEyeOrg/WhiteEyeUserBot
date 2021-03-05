@@ -1,15 +1,15 @@
 # WhiteEyeUserBot
 ![Python Version](https://img.shields.io/badge/Python-v3.8-blue)
-![Repo Size](https://img.shields.io/github/repo-size/WhiteEye-Org/WhiteEyeUserBot)
-[![Commit Activity](https://img.shields.io/github/commit-activity/w/WhiteEye-Org/WhiteEyeUserBot)](https://github.com/WhiteEye-Org/WhiteEyeUserBot/pulse)
-[![Codacy Badge](https://api.codacy.com/project/badge/Grade/b10d40c60fc549299eeb7bda1c7501aa)](https://app.codacy.com/manual/WhiteEye-Org/WhiteEyeUserBot?utm_source=github.com&utm_medium=referral&utm_content=athphane/userbot&utm_campaign=Badge_Grade_Settings)
-[![HitCount](http://hits.dwyl.com/WhiteEye-Org/WhiteEyeUserBot.svg)](http://hits.dwyl.com/WhiteEye-Org/WhiteEyeUserBot)
-[![Contributors](https://img.shields.io/github/contributors/WhiteEye-Org/WhiteEyeUserBot)](https://github.com/WhiteEye-Org/WhiteEyeUserBot/graphs/contributors)
-![Last Commit](https://img.shields.io/github/last-commit/WhiteEye-Org/WhiteEyeUserBot/master)
-![Issues](https://img.shields.io/github/issues/WhiteEye-Org/WhiteEyeUserBot)
-![Pull Requests](https://img.shields.io/github/issues-pr/WhiteEye-Org/WhiteEyeUserBot)
+![Repo Size](https://img.shields.io/github/repo-size/WhiteEye-Org/WhiteEyeTGUserBot)
+[![Commit Activity](https://img.shields.io/github/commit-activity/w/WhiteEye-Org/WhiteEyeUserBot)](https://github.com/WhiteEye-Org/WhiteEyeTGUserBot/pulse)
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/b10d40c60fc549299eeb7bda1c7501aa)](https://app.codacy.com/manual/WhiteEye-Org/WhiteEyeUserTGBot?utm_source=github.com&utm_medium=referral&utm_content=athphane/userbot&utm_campaign=Badge_Grade_Settings)
+[![HitCount](http://hits.dwyl.com/WhiteEye-Org/WhiteEyeTGUserBot.svg)](http://hits.dwyl.com/WhiteEye-Org/WhiteEyeTGUserBot)
+[![Contributors](https://img.shields.io/github/contributors/WhiteEye-Org/WhiteEyeTGUserBot)](https://github.com/WhiteEye-Org/WhiteEyeTGUserBot/graphs/contributors)
+![Last Commit](https://img.shields.io/github/last-commit/WhiteEye-Org/WhiteEyeTGUserBot/master)
+![Issues](https://img.shields.io/github/issues/WhiteEye-Org/WhiteEyeTGUserBot)
+![Pull Requests](https://img.shields.io/github/issues-pr/WhiteEye-Org/WhiteEyeTGUserBot)
 [![StyleCI](https://github.styleci.io/repos/216083990/shield?branch=master)](https://github.styleci.io/repos/216083990)
-[![License](https://img.shields.io/github/license/WhiteEye-Org/WhiteEyeUserBot)](LICENSE)
+[![License](https://img.shields.io/github/license/WhiteEye-Org/WhiteEyeTGUserBot)](LICENSE)
 
 <img src="https://telegra.ph/file/28d9b7eb6ef941325bc64.jpg" width="190" align="right">
 
@@ -44,7 +44,7 @@
 
 # DEPLOY
 
-[![Deploy To Heroku](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/WhiteEye-Org/WhiteEyeUserBot)
+[![Deploy To Heroku](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/WhiteEye-Org/WhiteEyeTGUserBot)
 # String
 
 [![Run on Repl.it](https://img.shields.io/badge/run-string__session.py-red?style=for-the-badge&logo=repl.it)](https://repl.it/@mrdayamzaidi/WhiteEyeUserbot)
