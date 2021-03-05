@@ -1,1 +1,1 @@
-WhiteEyeTGUserBot: python -m WhiteEyeTGUserBot
+WhiteEyeUserBot: python -m WhiteEyeUserBot
