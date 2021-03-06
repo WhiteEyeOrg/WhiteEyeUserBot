@@ -1,7 +1,7 @@
 # WhiteEyeUserBot
 ![Python Version](https://img.shields.io/badge/Python-v3.8-blue)
 ![Repo Size](https://img.shields.io/github/repo-size/WhiteEye-Org/WhiteEyeTGUserBot)
-[![Commit Activity](https://img.shields.io/github/commit-activity/w/WhiteEye-Org/WhiteEyeUserBot)](https://github.com/WhiteEye-Org/WhiteEyeTGUserBot/pulse)
+[![Commit Activity](https://img.shields.io/github/commit-activity/w/WhiteEye-Org/WhiteEyeTGUserBot)](https://github.com/WhiteEye-Org/WhiteEyeTGUserBot/pulse)
 [![Codacy Badge](https://api.codacy.com/project/badge/Grade/b10d40c60fc549299eeb7bda1c7501aa)](https://app.codacy.com/manual/WhiteEye-Org/WhiteEyeUserTGBot?utm_source=github.com&utm_medium=referral&utm_content=athphane/userbot&utm_campaign=Badge_Grade_Settings)
 [![HitCount](http://hits.dwyl.com/WhiteEye-Org/WhiteEyeTGUserBot.svg)](http://hits.dwyl.com/WhiteEye-Org/WhiteEyeTGUserBot)
 [![Contributors](https://img.shields.io/github/contributors/WhiteEye-Org/WhiteEyeTGUserBot)](https://github.com/WhiteEye-Org/WhiteEyeTGUserBot/graphs/contributors)
