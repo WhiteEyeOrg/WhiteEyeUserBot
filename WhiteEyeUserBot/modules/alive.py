@@ -51,10 +51,10 @@ pm_caption += "✯ **Current Branch** : `master`\n"
 pm_caption += f"✯ **My Boss** : {DEFAULTUSER} \n"
 pm_caption += "✯ **Heroku Database** : `AWS - Working Properly`\n\n"
 pm_caption += "✯**[Join Our Channel]**(https://t.me/WhiteEyeOT)\n"
-pm_caption += "✯ **License** : [GNU General Public License v3.0](https://github.com/whiteeye-org/WhiteEyeUserBot/blob/main/LICENSE)\n"
+pm_caption += "✯ **License** : [GNU General Public License v3.0](https://github.com/whiteeyeorg/WhiteEyeUserBot/blob/main/LICENSE)\n"
 pm_caption += "✯ **Copyright** : By [WhiteEye](https://t.me/WhiteEyeDevs)\n"
 pm_caption += (
-    "[🇮🇳 Deploy WhiteEyeUserBot 🇮🇳](https://whiteeye-org.github.io/WhiteEyeUserBot/)\n"
+    "[🇮🇳 Deploy WhiteEyeUserBot 🇮🇳](https://whiteeyeorg.github.io/WhiteEyeUserBot/)\n"
 )
 
 
