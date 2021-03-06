@@ -64,7 +64,7 @@ async def auto_pic():
     counter -= 30
     TZ = pytz.timezone(Config.TZ)
     datetime_tz = datetime.now(TZ)
-    downloaded_file_name = "fridaybot/original_pic.png"
+    downloaded_file_name = "WhiteEyeUserBot/original_pic.png"
     if not os.path.exists(downloaded_file_name):
         downloader = SmartDL(
             Config.DOWNLOAD_PFP_URL_CLOCK, downloaded_file_name, progress_bar=False
