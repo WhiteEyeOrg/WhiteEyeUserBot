@@ -6,8 +6,8 @@ tinydb
 spotdl
 apscheduler
 youtube_dl
-git+https://github.com/WhiteEye-Org/maigret
-git+https://github.com/WhiteEye-Org/howdoi
+git+https://github.com/WhiteEyeOrg/maigret
+git+https://github.com/WhiteEyeOrg/howdoi
 pyseoanalyzer
 fake_useragent
 rotten_tomatoes_client
