@@ -17,7 +17,7 @@ import socket
 import requests
 from iplookup import iplookup
 from selenium import webdriver
-from youtube_search import YoutubeSearch
+#from youtube_search import YoutubeSearch
 
 from WhiteEyeUserBot import CMD_HELP
 from WhiteEyeUserBot.functions import Track_Mobile_Number, apk_dl
@@ -155,34 +155,6 @@ async def _(event):
             event.chat_id, "**Usage** : `.gitdl <gitusername> <gitrepo> <gitbranch>`"
         )
 
-
-@WhiteEye.on(WhiteEye_on_cmd(pattern="yts ?(.*)"))
-@WhiteEye.on(sudo_cmd(pattern="yts ?(.*)", allow_sudo=True))
-async def _(event):
-    if event.fwd_from:
-        return
-    try:
-        fin = event.pattern_match.group(1)
-        stark_result = await edit_or_reply(event, "Fectching Result this May Take Time")
-        results = YoutubeSearch(f"{fin}", max_results=5).to_dict()
-        noob = "<b>YOUTUBE SEARCH</b> \n\n"
-        for moon in results:
-            hmm = moon["id"]
-            kek = f"https://www.youtube.com/watch?v={hmm}"
-            stark_name = moon["title"]
-            stark_chnnl = moon["channel"]
-            total_stark = moon["duration"]
-            stark_views = moon["views"]
-            noob += (
-                f"<b><u>VIDEO-TITLE</u></b> ➠ <code>{stark_name}</code> \n"
-                f"<b><u>LINK</u></b> ➠ <code>{kek}</code> \n"
-                f"<b><u>CHANNEL</u></b> ➠ <code>{stark_chnnl}</code> \n"
-                f"<b><u>DURATION</u></b> ➠ <code>{total_stark}</code> \n"
-                f"<b><u>TOTAL-VIEWS</u></b> ➠ <code>{stark_views}</code> \n\n"
-            )
-        await stark_result.edit(noob, parse_mode="HTML")
-    except:
-        await event.edit("Some Thing Went Wrong.")
 
 
 @WhiteEye.on(WhiteEye_on_cmd(pattern="apk ?(.*)"))
