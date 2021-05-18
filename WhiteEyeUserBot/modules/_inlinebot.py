@@ -19,7 +19,7 @@ from WhiteEyeUserBot import bot as client3
 from WhiteEyeUserBot import client2 as client1
 from WhiteEyeUserBot import client3 as client2
 from WhiteEyeUserBot.Configs import Config
-from WhiteEyeUserBot.functions import _deezer_dl, _ytdl, all_pro_s
+from WhiteEyeUserBot.functions import _deezer_dl, all_pro_s
 from WhiteEyeUserBot.modules import inlinestats
 
 # from pornhub_api import PornhubApi
@@ -267,18 +267,6 @@ async def rip(event):
         txt = "You Can't View My Masters Stats"
         await event.answer(txt, alert=True)
 
-
-@tgbot.on(events.callbackquery.CallbackQuery(data=re.compile(b"yt_dla_(.*)")))
-async def rip(event):
-    o = await all_pro_s(Config, client1, client2, bot)
-    yt_dl_data = event.data_match.group(1).decode("UTF-8")
-    link_s = yt_dl_data
-    if event.query.user_id not in o:
-        text = f"Please Get Your Own WhiteEyeUserBot And Don't Waste My Resources"
-        await event.answer(text, alert=True)
-        return
-    is_it = True
-    await _ytdl(link_s, is_it, event, tgbot)
 
 
 @tgbot.on(events.callbackquery.CallbackQuery(data=re.compile(b"deezer_dl_(.*)")))
