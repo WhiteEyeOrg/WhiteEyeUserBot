@@ -18,17 +18,7 @@ from hachoir.parser import createParser
 from PIL import Image
 from selenium import webdriver
 from telethon.tl.types import DocumentAttributeAudio
-from youtube_dl import YoutubeDL
-from youtube_dl.utils import (
-    ContentTooShortError,
-    DownloadError,
-    ExtractorError,
-    GeoRestrictedError,
-    MaxDownloadsReached,
-    PostProcessingError,
-    UnavailableVideoError,
-    XAttrMetadataError,
-)
+
 
 from WhiteEyeUserBot import bot as borg
 from WhiteEyeUserBot.utils import load_module
