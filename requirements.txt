@@ -5,7 +5,7 @@ pymediainfo
 tinydb
 spotdl
 apscheduler
-youtube_dl
+#youtube_dl
 git+https://github.com/WhiteEyeOrg/maigret
 git+https://github.com/WhiteEyeOrg/howdoi
 pyseoanalyzer
@@ -83,7 +83,7 @@ telegraph
 tswift
 urbandict>=0.5
 wikipedia>=1.4.0
-youtube-search
+#youtube-search
 password_strength
 pyjokes
 cryptocompare==0.7.3
