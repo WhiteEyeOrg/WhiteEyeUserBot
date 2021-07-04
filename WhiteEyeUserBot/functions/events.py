@@ -21,7 +21,7 @@ from WhiteEyeUserBot import client3 as warnerclient
 
 
 def register(**args):
-    """ Register a new event. """
+    """Register a new event."""
     pattern = args.get("pattern", None)
     disable_edited = args.get("disable_edited", False)
     ignore_unsafe = args.get("ignore_unsafe", False)

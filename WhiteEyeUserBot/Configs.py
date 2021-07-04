@@ -48,7 +48,7 @@ class Config(object):
     ANTI_SPAMBOT = sb(os.environ.get("ANTI_SPAMBOT", "False"))
     PRIVATE_GROUP_BOT_API_ID = os.environ.get("PRIVATE_GROUP_BOT_API_ID", None)
     ANTI_SPAMBOT_SHOUT = sb(os.environ.get("ANTI_SPAMBOT_SHOUT", "False"))
-    #YOUTUBE_API_KEY = os.environ.get("YOUTUBE_API_KEY", None)
+    # YOUTUBE_API_KEY = os.environ.get("YOUTUBE_API_KEY", None)
     ALIVE_NAME = os.environ.get("ALIVE_NAME", None)
     WOLFRAM_ID = os.environ.get("WOLFRAM_ID", None)
     LESS_SPAMMY = os.environ.get("LESS_SPAMMY", True)
@@ -241,7 +241,7 @@ class Config(object):
         t_file = open(TMP_DOWNLOAD_DIRECTORY + "auth_token.txt", "w")
         t_file.write(AUTH_TOKEN_DATA)
         t_file.close()
-    #YOUTUBE_API_KEY = os.environ.get("YOUTUBE_API_KEY", None)
+    # YOUTUBE_API_KEY = os.environ.get("YOUTUBE_API_KEY", None)
     GDRIVE_FOLDER_ID = os.environ.get("GDRIVE_FOLDER_ID", None)
     # MongoDB
     MONGO_URI = os.environ.get("MONGO_URI", None)

@@ -50,7 +50,7 @@ UNBAN_RIGHTS = ChatBannedRights(
 
 @WhiteEye.on(WhiteEye_on_cmd(pattern=f"zombies ?(.*)"))
 async def rm_deletedacc(show):
-    """ For .zombies command, list all the ghost/deleted/zombie accounts in a chat. """
+    """For .zombies command, list all the ghost/deleted/zombie accounts in a chat."""
 
     con = show.pattern_match.group(1).lower()
     del_u = 0

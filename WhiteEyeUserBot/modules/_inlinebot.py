@@ -12,7 +12,6 @@ from search_engine_parser import GoogleSearch
 from telethon import Button, custom, events, functions
 from telethon.utils import get_display_name
 from tinydb import Query, TinyDB
-#from youtube_search import YoutubeSearch
 
 from WhiteEyeUserBot import ALIVE_NAME, CMD_HELP, CMD_LIST
 from WhiteEyeUserBot import bot as client3
@@ -21,6 +20,9 @@ from WhiteEyeUserBot import client3 as client2
 from WhiteEyeUserBot.Configs import Config
 from WhiteEyeUserBot.functions import _deezer_dl, all_pro_s
 from WhiteEyeUserBot.modules import inlinestats
+
+# from youtube_search import YoutubeSearch
+
 
 # from pornhub_api import PornhubApi
 PMPERMIT_PIC = os.environ.get("PMPERMIT_PIC", None)
@@ -268,7 +270,6 @@ async def rip(event):
         await event.answer(txt, alert=True)
 
 
-
 @tgbot.on(events.callbackquery.CallbackQuery(data=re.compile(b"deezer_dl_(.*)")))
 async def rip(event):
     sun = event.data_match.group(1).decode("UTF-8")
@@ -415,8 +416,6 @@ def paginate_help(page_number, loaded_modules, prefix):
             )
         ]
     return pairs
-
-
 
 
 @tgbot.on(events.InlineQuery(pattern=r"jm (.*)"))

@@ -95,7 +95,7 @@ UNMUTE_RIGHTS = ChatBannedRights(until_date=None, send_messages=False)
 @WhiteEye.on(WhiteEye_on_cmd(pattern=r"setgpic"))
 @WhiteEye.on(sudo_cmd(pattern=r"setgpic", allow_sudo=True))
 async def set_group_photo(gpic):
-    """ For .setgpic command, changes the picture of a group """
+    """For .setgpic command, changes the picture of a group"""
     if not gpic.is_group:
         await gpic.edit("`I don't think this is a group.`")
         return
@@ -126,7 +126,7 @@ async def set_group_photo(gpic):
 @WhiteEye.on(WhiteEye_on_cmd(pattern=r"promote(?: |$)(.*)"))
 @WhiteEye.on(sudo_cmd(pattern=r"promote(?: |$)(.*)", allow_sudo=True))
 async def promote(promt):
-    """ For .promote command, promotes the replied/tagged person """
+    """For .promote command, promotes the replied/tagged person"""
     # Get targeted chat
     await promt.get_chat()
     new_rights = ChatAdminRights(
@@ -332,7 +332,7 @@ async def spider(spdr):
 
 @WhiteEye.on(WhiteEye_on_cmd(pattern=r"unmute(?: |$)(.*)"))
 async def unmoot(unmot):
-    """ For .unmute command, unmute the replied/tagged person """
+    """For .unmute command, unmute the replied/tagged person"""
     # Admin or creator check
     await unmot.get_chat()
 
@@ -375,7 +375,7 @@ async def unmoot(unmot):
 @register(incoming=True)
 @errors_handler
 async def muter(moot):
-    """ Used for deleting the messages of muted people """
+    """Used for deleting the messages of muted people"""
     try:
         from WhiteEyeUserBot.modules.sql_helper.gmute_sql import is_gmuted
         from WhiteEyeUserBot.modules.sql_helper.spam_mute_sql import is_muted
@@ -408,7 +408,7 @@ async def muter(moot):
 # @register(outgoing=True, pattern="^.ungmute(?: |$)(.*)")
 @WhiteEye.on(WhiteEye_on_cmd(pattern=r"ungmute(?: |$)(.*)"))
 async def ungmoot(un_gmute):
-    """ For .ungmute command, ungmutes the target in the WhiteEyeUserBot """
+    """For .ungmute command, ungmutes the target in the WhiteEyeUserBot"""
     # Admin or creator check
     await un_gmute.get_chat()
     # Check if the function running under SQL mode
@@ -445,7 +445,7 @@ async def ungmoot(un_gmute):
 
 @WhiteEye.on(WhiteEye_on_cmd(pattern=r"gmute(?: |$)(.*)"))
 async def gspider(gspdr):
-    """ For .gmute command, globally mutes the replied/tagged person """
+    """For .gmute command, globally mutes the replied/tagged person"""
     await gspdr.get_chat()
     try:
         from WhiteEyeUserBot.modules.sql_helper.gmute_sql import gmute
@@ -480,7 +480,7 @@ async def gspider(gspdr):
 
 @WhiteEye.on(WhiteEye_on_cmd(pattern=r"delusers(?: |$)(.*)"))
 async def rm_deletedacc(show):
-    """ For .delusers command, list all the ghost/deleted accounts in a chat. """
+    """For .delusers command, list all the ghost/deleted accounts in a chat."""
     if not show.is_group:
         await show.edit("`I don't think this is a group.`")
         return
@@ -545,7 +545,7 @@ async def rm_deletedacc(show):
 @WhiteEye.on(WhiteEye_on_cmd(pattern=r"adminlist"))
 @errors_handler
 async def get_admin(show):
-    """ For .admins command, list all of the admins of the chat. """
+    """For .admins command, list all of the admins of the chat."""
     info = await show.client.get_entity(show.chat_id)
     title = info.title if info.title else "this chat"
     mentions = f"<b>Admins in {title}:</b> \n"
@@ -566,7 +566,7 @@ async def get_admin(show):
 
 @WhiteEye.on(WhiteEye_on_cmd(pattern=r"pin(?: |$)(.*)"))
 async def pin(msg):
-    """ For .pin command, pins the replied/tagged message on the top the chat. """
+    """For .pin command, pins the replied/tagged message on the top the chat."""
     # Admin or creator check
     await msg.get_chat()
     to_pin = msg.reply_to_msg_id
@@ -604,7 +604,7 @@ async def pin(msg):
 
 @WhiteEye.on(WhiteEye_on_cmd(pattern=r"kick(?: |$)(.*)"))
 async def kick(usr):
-    """ For .kick command, kicks the replied/tagged person from the group. """
+    """For .kick command, kicks the replied/tagged person from the group."""
     # Admin or creator check
     await usr.get_chat()
     user, reason = await get_user_from_event(usr)
@@ -640,7 +640,7 @@ async def kick(usr):
 @WhiteEye.on(WhiteEye_on_cmd(pattern=r"users ?(.*)"))
 @errors_handler
 async def get_users(show):
-    """ For .users command, list all of the users in a chat. """
+    """For .users command, list all of the users in a chat."""
     info = await show.client.get_entity(show.chat_id)
     title = info.title if info.title else "this chat"
     mentions = "Users in {}: \n".format(title)
@@ -683,7 +683,7 @@ async def get_users(show):
 
 
 async def get_user_from_event(event):
-    """ Get the user from argument or replied message. """
+    """Get the user from argument or replied message."""
     args = event.pattern_match.group(1).split(" ", 1)
     extra = None
     if event.reply_to_msg_id:
